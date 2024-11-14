@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: thanak81-hamdelete-api-container
-          image: pipejet/thanak81-hamdelete-api:0
+          image: pipejet/thanak81-hamdelete-api:1
           ports:
             - containerPort: 8080
