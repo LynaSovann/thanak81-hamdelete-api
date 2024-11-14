@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: thanak81-hamdelete-api-certificate
+  namespace: thanak81-hamdelete-api
+spec:
+  secretName: thanak81-hamdelete-api-secret-tls
+  commonName: thanak81-hamdelete-api.assessify.org
+  dnsNames:
+  - thanak81-hamdelete-api.assessify.org
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
